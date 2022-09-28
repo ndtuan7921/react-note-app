@@ -25,4 +25,3 @@ While still in your work folder, run the following command in the console applic
 npm start
 ```
 
-Inspired by [Chris Blakely](https://www.youtube.com/c/ChrisBlakely)
