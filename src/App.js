@@ -25,15 +25,19 @@ const App = () => {
     const newNote = {
       id: nanoid(),
       text: text,
-      date: date.toLocaleDateString()
-    }
+      date: date.toLocaleDateString(),
+    };
 
-    setNotes([...notes, newNote])
+    setNotes([...notes, newNote]);
+  };
 
+  const deleteNode = (id) => {
+    const newNotes = notes.filter((note) => note.id !== id)
+    setNotes(newNotes);
   }
   return (
     <div className="App">
-      <NodesList notes={notes} handleAddNote={addNote} />
+      <NodesList notes={notes} handleAddNote={addNote} handleDeleteNode={deleteNode} />
     </div>
   );
 };

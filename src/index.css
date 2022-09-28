@@ -31,18 +31,26 @@ code {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  
 }
 
 .note.new {
   background-color: rgb(155, 232, 206);
 }
 
+.note span {
+  word-break: break-word; 
+  white-space: pre-wrap; 
+}
+
 textarea {
+  
   border: none;
   resize: none;
   /* all: unset; */
   background-color: rgb(155, 232, 206);
-  white-space: no-wrap;
+  
 }
 
 textarea:focus {
@@ -64,4 +72,15 @@ textarea:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.delete {
+  all: unset;
+  font-weight: 600;
+  color: rgb(163, 63, 63);
+}
+
+.delete:hover {
+  cursor: pointer;
+  color: rgb(254, 59, 59);
 }
