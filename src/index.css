@@ -84,3 +84,20 @@ textarea:focus {
   cursor: pointer;
   color: rgb(254, 59, 59);
 }
+
+.search {
+  background: rgb(233, 233, 233);
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 1.5rem;
+}
+
+.search input {
+  width: 100%;
+  background: rgb(233, 233, 233);
+  border: none;
+}
+
+.search input:focus {
+  outline: none;
+}
